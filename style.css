@@ -4,11 +4,25 @@
     box-sizing: border-box;
 }
 
-body {
+body, html {
+    body, html {
+    height: 100%;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
+    color: #fff;
+    background: linear-gradient(270deg, #ee658c, #f3618a, #f65885, #f44e7d, #f84175, #f44e7d, #f65885,  #f3618a) ;
+    background-size: 1000% 100%;
+    animation: slideBackground 3s linear infinite;
+}
+}
+
+@keyframes slideBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
 }
 
 header {
